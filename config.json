@@ -1,0 +1,62 @@
+{
+  "questions": [
+    "请简要说明神经网络中反向传播算法的工作原理。梯度是如何从输出层逐层向输入层传递的？为什么反向传播能够有效地训练深度网络？请结合链式法则简要解释其核心计算过程。",
+    "什么是分布式系统中的CAP定理？一个系统不可能同时满足一致性、可用性和分区容错性。在实际的分布式数据库设计中，通常需要在CAP三者之间做出取舍，常见的取舍方案有哪些？",
+    "请解释Transformer架构中自注意力机制的核心思想。Query、Key、Value三个矩阵分别扮演什么角色？自注意力机制相比循环神经网络有什么显著优势和主要局限性？",
+    "简述Linux操作系统中进程与线程的核心区别。在并发编程实践中，什么场景下应该优先选择多线程，什么场景下应该选择多进程？两者在资源开销和通信效率上有何不同？",
+    "什么是数据库中的事务隔离级别？从读未提交到串行化，每个级别分别能预防哪些并发问题？在高并发在线交易系统中通常使用哪个级别，选择它的理由是什么？",
+    "请说明TCP协议中流量控制与拥塞控制的区别与联系。滑动窗口机制是如何工作的？慢启动、拥塞避免、快速重传和快速恢复各自在什么网络条件下触发？",
+    "解释什么是微服务架构，它和单体架构相比有哪些核心优势和主要劣势？服务拆分的关键原则有哪些？在生产环境中，微服务的服务发现和负载均衡通常如何实现？",
+    "什么是操作系统中的虚拟内存管理？虚拟地址空间、页面置换算法和内存碎片问题之间有什么关系？Linux系统通常使用哪种页面置换策略，选择它的依据是什么？",
+    "请简要介绍大语言模型中Token化的基本概念。中文文本和英文文本在分词后生成的Token数量为什么存在显著差异？这种差异对推理成本、响应速度和上下文窗口有什么实际影响？",
+    "说明什么是零信任安全模型，它为什么在云原生环境中尤为重要？与传统基于网络边界的安全模型相比，零信任架构在身份验证、动态访问控制和持续监控方面有哪些核心差异？"
+  ],
+  "timeout": 300,
+  "channels": [
+    {
+      "name": "ch1-glm-5.3",
+      "url": "https://cjrouter.cn/v1",
+      "api_key": "sk-fnqNRlWyYznsWSfdhtcJFs3eMS9WqoUto9ouirn4yWAU7dHx",
+      "model": "glm-5.3",
+      "requests": 20,
+      "concurrency": 5,
+      "max_tokens": 6000
+    },
+    {
+      "name": "ch2-qwen3.7-max",
+      "url": "https://cjrouter.cn/v1",
+      "api_key": "sk-jVg36pzUK7koCsib5KKIQ8jZlMO9NbPon0qF0EZacjlA3F8H",
+      "model": "qwen3.7-max",
+      "requests": 20,
+      "concurrency": 5,
+      "max_tokens": 6000
+    },
+    {
+      "name": "ch3-deepseek-v4-flash",
+      "url": "https://cjrouter.cn/v1",
+      "api_key": "sk-jVg36pzUK7koCsib5KKIQ8jZlMO9NbPon0qF0EZacjlA3F8H",
+      "model": "deepseek-v4-flash",
+      "requests": 20,
+      "concurrency": 5,
+      "max_tokens": 6000
+    },
+    {
+      "name": "ch4-ttt-kimi-k2.6",
+      "url": "https://ttt-console.cjtoken.cn/v1",
+      "api_key": "sk-UZiY5ou5YBE3gZdMrppExOQhTsnlpLglaex0oevB56A2uxsb",
+      "model": "kimi-k2.6",
+      "requests": 20,
+      "concurrency": 5,
+      "max_tokens": 6000
+    },
+    {
+      "name": "ch5-aliyun-doubao",
+      "url": "https://ws-ivclwnp3m1p0i62a.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+      "api_key": "sk-ws-H.PHXMRLP.y28S.MEUCIFocpM2OkhG7o7RwMnFmtS9UQ4IDFKBmqQJvI_ex0QGCAiEAgT_StxPS1r1I8HY2ccwguL6LOy2-xE0wN3P0vFUF2Mc",
+      "model": "doubao-seed-2-1-pro-260628",
+      "requests": 20,
+      "concurrency": 5,
+      "max_tokens": 6000
+    }
+  ]
+}

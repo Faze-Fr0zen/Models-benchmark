@@ -119,9 +119,10 @@ GET  /api/runs/<id>/detail   # 逐条数据
 - id, name/备注, status, created_at, finished_at
 - 总体统计 JSON (每通道汇总)
 
-### run_channels (或汇总存 runs 的 JSON 字段)
+### run_channels
 - run_id, channel_name, model, url, requests, concurrency, max_tokens
 - 汇总: ok/failed/ttft_avg/ttft_pcts/tps_avg/tps_pcts/success_rate
+- 采用独立表, 不用 JSON 字段
 
 ### run_results (逐条)
 - run_id, channel_id, 单条 ttft/tps/tokens/error/model_reported...
